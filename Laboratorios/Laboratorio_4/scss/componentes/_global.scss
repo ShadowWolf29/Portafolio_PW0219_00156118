@@ -1,0 +1,27 @@
+$color-primary: purple;
+$color-secundary: blueviolet;
+$color-tertiary: violet;
+$color-bg: whitesmoke;
+$color-dark: black;
+
+@mixin set-dimensions($height, $width) {
+    width: $width;
+    height: $height;
+}
+
+body{
+    @include set-dimensions(100vh,auto);
+    box-sizing: border-box;
+
+    overflow: hidden;
+    background-image: url("https://images2.alphacoders.com/754/thumb-1920-754606.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 1em 5%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
